@@ -1,0 +1,85 @@
+*{
+     box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+   background:white;
+}
+header{
+    background: rgb(6, 18, 87);
+    height: 66px;
+}
+header *{
+    color: white;
+}
+header  .logo{
+    float: left;
+    height:inherit;
+    margin-left: 2em;
+}
+header .logo h1{
+    font-family: 'Oleo Script', cursive;
+}
+header .logo-text{
+  margin: 11px;
+}
+header .logo-text span{
+ color: rgb(226, 156, 6);
+ font-family: 'Oleo Script', cursive;
+}
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+
+}
+header ul li{
+    float: left;
+  position: relative;
+}
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a{
+    padding:10px;
+    background: white;
+    color: rgb(59, 58, 58);
+}
+header ul li ul li a.logout{
+    color: tomato;
+}
+header ul li ul li a:hover{
+ background: rgb(209, 209, 209);
+
+}
+
+header ul li a{
+     display: block;
+     padding: 21px;
+     font-size: 1.6em;
+     text-decoration: none;
+     font-family: 'Oleo Script', cursive;
+     
+}
+header ul li a:hover{
+    transition: 0.5s;
+    background:rgba(58, 97, 202, 0.753)
+   
+}
+header .menu-toggle{
+     display: none;
+}
