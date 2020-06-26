@@ -1,4 +1,5 @@
 #!/bin/bash
-c
+
+git add -A
 git commit -m 'edit'
-git push origin master
+git push origin masterz`z`
