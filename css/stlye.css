@@ -1,182 +1,205 @@
-html{
-    -webkit-font-smoothing:antialiased;
+html {
+    -webkit-font-smoothing: antialiased;
     padding: 20px o;
 }
-.band{
- width: 90%;
- max-width: 1240px;
- margin: 0 auto;
- display: grid;
- grid-template-columns: 1fr;
- grid-template-rows: auto;
- grid-gap: 20px;
+
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
 }
- @media only screen and (min-width: 500px) {
-     .band{
-         grid-template-columns: 1fr 1fr;
 
-     }
-   .item-1{
-       grid-column: 1/span 2;
-   }
+@media only screen and (min-width: 500px) {
+    .band {
+        grid-template-columns: 1fr 1fr;
+    }
+    .item-1 {
+        grid-column: 1/span 2;
+    }
+}
 
- }
- @media only screen and (min-width: 850px){
-     .band{
-          grid-template-columns: repeat(4,1fr);
-     }
- }
+@media only screen and (min-width: 850px) {
+    .band {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
- .card{
-     min-width: 100%;
-     background:white;
-     box-shadow: 0 2px 5px black;
-     display: flex;
-     flex-direction:column;
-     text-decoration: none;
-     color: rgb(65, 65, 65);
-     position: relative;
-     top: 0;
-     transition: all .1s ease-in;
- }
- .card:hover{
-     top: -2px;
-     box-shadow: 0 4px 5px rgb(0,0,0,0.2);
- }
-  .card article{
-      padding: 20px;
-      display: flex;
-      flex: 1;
-      justify-content: space-between;
-     flex-direction: column;
-  }
- .card .thumb{
-     padding-bottom: 60%;
-     background-size: cover;
-     background-position: center center;
- }
- .card p{
-     flex: 1;
-     line-height: 1.4;
- }
-h1{
+.card {
+    min-width: 100%;
+    background: white;
+    box-shadow: 0 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+}
+
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgb(0, 0, 0, 0.2);
+}
+
+.card article {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card p {
+    flex: 1;
+    line-height: 1.4;
+}
+
+h1 {
     font-size: 20px;
-} 
-
-     /* ----------------------------------This is memubra------------------------------------------------------------ */
-*{
-     box-sizing: border-box;
 }
-body{
+
+
+/* ----------------------------------This is memubra------------------------------------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
     padding: 0px;
     margin: 0px;
-   background:white;
+    background: white;
 }
-header{
+
+header {
     background: rgb(6, 18, 87);
     height: 66px;
 }
-header *{
+
+header * {
     color: white;
 }
-header  .logo{
+
+header .logo {
     float: left;
-    height:inherit;
+    height: inherit;
     margin-left: 2em;
 }
-header .logo h1{
+
+header .logo h1 {
     font-family: 'Oleo Script', cursive;
 }
-header .logo-text{
-  margin: 11px;
+
+header .logo-text {
+    margin: 11px;
 }
-header .logo-text span{
- color: rgb(226, 156, 6);
- font-family: 'Oleo Script', cursive;
+
+header .logo-text span {
+    color: rgb(226, 156, 6);
+    font-family: 'Oleo Script', cursive;
 }
-header ul{
+
+header ul {
     float: right;
     margin: 0px;
     padding: 0px;
     list-style: none;
-    
+}
 
-}
-header ul li{
+header ul li {
     float: left;
-  position: relative;
+    position: relative;
 }
-header ul li ul{
+
+header ul li ul {
     position: absolute;
     top: 66px;
     right: 0px;
     width: 180px;
     display: none;
-
 }
-header ul li:hover ul{
+
+header ul li:hover ul {
     display: block;
 }
-header ul li ul li{
+
+header ul li ul li {
     width: 100%;
 }
-header ul li ul li a{
-    padding:10px;
+
+header ul li ul li a {
+    padding: 10px;
     background: white;
     color: rgb(59, 58, 58);
 }
-header ul li ul li a.logout{
+
+header ul li ul li a.logout {
     color: tomato;
 }
-header ul li ul li a:hover{
+
+header ul li ul li a:hover {
     background: rgb(209, 209, 209);
-
 }
 
-header ul li a{
-     display: block;
-     padding: 21px;
-     font-size: 1.6em;
-     text-decoration: none;
-     font-family: 'Oleo Script', cursive;
-     
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.6em;
+    text-decoration: none;
+    font-family: 'Oleo Script', cursive;
 }
-header ul li a:hover{
+
+header ul li a:hover {
     transition: 0.5s;
-    background:rgba(58, 97, 202, 0.753);
-  
+    background: rgba(58, 97, 202, 0.753);
 }
-header .menu-toggle{
-     display: none;
-}
- 
- @media only screen and (max-width: 750px) {
-   
-     header ul{
-         width: 100%;
-         background: rgba(4, 72, 139, 0.781);
-       
-     }
-     header ul li{
-         width: 100%;
 
-     }
-     header ul li ul{
-         position: static;
-         display: block;
-         width: 100%;
-         background: white;
-     }
-     header ul li ul li a{
-        padding:10px;
-        background: rgba(11, 76, 141, 0.623);;
+header .menu-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    header ul {
+        width: 100%;
+        background: rgba(4, 72, 139, 0.781);
+    }
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+        background: white;
+    }
+    header ul li ul li a {
+        padding: 10px;
+        background: rgba(11, 76, 141, 0.623);
+        ;
         color: rgb(59, 58, 58);
         padding-left: 50px;
+        z-index: 10000;
     }
-    header ul li ul li a.logout{
+    header ul li ul li a.logout {
         color: tomato;
+        z-index: 10000;
     }
-    header .menu-toggle{
+    header .menu-toggle {
         display: block;
-   }
- }
+    }
+}
+
+.youo {
+    z-index: 1000000;
+}
